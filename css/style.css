@@ -1,0 +1,581 @@
+﻿/*
+Theme Name: Chris Spoonver V4
+Theme URI: http://www.chrisspooner.com/
+Description: A premium theme by Chris Spooner of Blog.SpoonGraphics.
+Version: 1.0
+Author: Chris Spooner
+Author URI: http://www.blog.spoongraphics.co.uk
+*/
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	font-family: "Droid Serif", Georgia, serif; 
+	font-size: 16px; line-height: 30px; color: #454545;
+	background: #fefbf0; 
+}
+
+a {
+	color: #65849a; text-decoration: none;
+}
+	a:hover {
+		color: #335c79;
+	}
+
+#header-wrap {
+	background: #1a2f3f url(../images/blue-bg.jpg);
+	border-bottom: 4px solid #e2e0d5;
+}
+
+header {
+	width: 968px; margin: 0 auto; padding: 86px 16px 0 16px; 
+	background: url(../images/header-bg.jpg) center top no-repeat;
+	position: relative;
+}
+
+	header h1 a {
+		display: block; width: 175px; height: 120px; 
+		position: absolute; left: 412px; top: 46px;
+		background: url(../images/logo.png) no-repeat; text-indent: -9999px;
+	}
+		header h1 a:hover {
+			top: 48px;
+		}
+	
+	header nav {
+		height: 140px; overflow: hidden;
+	}
+		header nav a {
+			color: #fff;
+		}
+			header nav a:hover {
+				color: #b9ddf6;
+			}
+	
+	p, ul, ol {
+		margin: 0 0 25px 0; list-style-position: inside;
+	}
+	
+	p.btn {
+		padding: 20px;
+		font-family: "Pacifico", cursive; font-size: 32px; font-weight: normal; text-align: center;
+		background: #f3f1e6 url(../images/btn-bg.png) repeat-x;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	h2 {
+		font-family: "Droid Sans", Helvetica, sans-serif;
+		font-size: 32px; font-weight: normal;
+		margin: 0 0 15px 0; line-height: 38px;
+	}
+	
+	h2.header {
+		font-family: "Pacifico", cursive; color: #e2e0d5; 
+	}
+	
+	h3 {
+		font-family: "Droid Sans", Helvetica, sans-serif;
+		font-size: 26px; font-weight: normal;
+		margin: 0 0 15px 0;
+	}
+	
+	h3.header {
+		font-size: 32px; font-family: "Pacifico", cursive; color: #e2e0d5; 
+		margin: 0 0 26px 0;
+	}
+	
+	h4 {
+		font-family: "Droid Sans", Helvetica, sans-serif;
+		font-size: 20px; font-weight: normal;
+		margin: 0 0 15px 0;
+	}
+	
+	blockquote {
+		background: #F3F1E6; padding: 15px 20px 1px 15px; font-style: italic;
+		margin: 0 0 25px 0;
+	}
+	
+	
+	ul#nav {
+		list-style: none; float: left; margin: 0 0 0 10px;
+		
+	}
+		ul#nav li {
+			float: left; margin: 0 0 0 45px;
+		}
+			ul#nav li:first-child {
+				margin: 0;
+			}
+		
+	ul#subscribe {
+		list-style: none; float: right; margin: 0 10px 0 0;
+	}
+		ul#subscribe li {
+			float: left; margin: 0 0 0 45px; padding: 0 0 0 25px;
+			background: url(../images/subscribe-icons.png) left no-repeat;
+		}
+			ul#subscribe li.twitter {
+				background-position: 0 7px; margin: 0;
+			}
+			ul#subscribe li.rss {
+				background-position: 0 -59px;
+			}
+		
+	.sticky {
+		clear: both; padding: 0 0 50px 0;
+		position: relative;
+	}
+		
+		.sticky .desc {
+			width: 295px; float: right;
+			color: #fff;
+		}
+		
+		.sticky .desc li {
+			font-family: "Droid Sans", Helvetica, sans-serif;
+			list-style-image: url(images/small-white-star.png);
+			list-style-position: inside;
+		}
+		
+		.sticky .video {
+			float: left; line-height: 0;
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+			-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+			position: absolute; top: 0; left: 0;
+		}
+	
+	.sticky:after {
+		content: ""; clear: both; display: block;
+	}
+	
+	
+#content {
+	width: 968px; margin: 0 auto; padding: 60px 16px 0 16px;
+	overflow: hidden;
+}
+	
+#main {
+	width: 674px; float: left; margin: 0 50px 80px 0; 
+}
+	.post {
+		margin: 0 0 60px 0; padding: 0 0 40px 0;
+		background: url(../images/star-border.png) center bottom no-repeat;
+	}
+		.post .date {
+			float: left; width: 65px; height: 70px;
+			margin: 0 15px 25px 0; padding: 9px 0 0 0;
+			background: #fdfdfd;
+			background: linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+			background: -moz-linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+			background: -webkit-linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+			border: 1px solid #e4e1d7;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+		}
+			.post .date p {
+				font-family: Helvetica, Sans-Serif; font-size: 46px; font-weight: normal; color: #999; text-align: center;
+			}
+		
+			.post .date span {
+				font-size: 20px; font-weight: bold; text-transform: uppercase; color: #fff; 
+				margin: 8px 0 0 0; padding: 2px 0 0 0;
+				background: #335b77;
+				background: linear-gradient(top, #335b77 0%, #223b4d 100%);
+				background: -moz-linear-gradient(top, #335b77 0%, #223b4d 100%);
+				background: -webkit-linear-gradient(top, #335b77 0%, #223b4d 100%);
+				display: block;
+				border-radius: 0 0 5px 5px;
+				-moz-border-radius: 0 0 5px 5px;
+				-webkit-border-radius: 0 0 5px 5px;
+			}
+		
+		@-moz-document url-prefix() {
+		    .post .date {
+		        padding: 14px 0 0 0;
+		    }
+		}
+		
+		.post .title {
+			width: 584px; float: left;
+		}
+			
+		.post h2 {
+			margin: 0;
+		}
+			
+		.post ul.post-info {
+			font-family: "Droid Sans", Helvetica, sans-serif;
+			float: left; list-style: none; 
+		}
+			.post ul.post-info li {
+				float: left; margin: 0 0 0 15px; padding: 0 0 0 25px;
+				background: url(../images/small-blue-star.png) left no-repeat;
+			}
+				.post ul.post-info li:first-child {
+					margin: 0; padding: 0;
+					background: none;
+				}
+	
+		.post .video {
+			margin: 0 0 15px 16px; clear: both; line-height: 0; text-align: center; overflow: hidden;
+			box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+			-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+			display: inline-block;
+		}
+		
+		.post img {
+			display: block; margin: 0 auto;
+			border: 3px solid #e7e5dc;
+		}
+		
+		.post p {
+			clear: left;
+		}
+
+	#main h2.header {
+		margin: 0 0 63px 0;
+	}
+	
+.pagination {
+	overflow: hidden; 
+}
+	.pagination li {
+		list-style: none;
+	}
+		.pagination li a {
+			display: block;
+			padding: 20px;
+			font-family: "Pacifico", cursive; font-size: 32px; font-weight: normal;
+			background: #f3f1e6 url(../images/btn-bg.png) repeat-x;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+	}
+		
+	.pagination .older {
+		float: left;
+	}
+	.pagination .newer {
+		float: right;
+	}
+
+#archives ul {
+	list-style: none;
+}
+#archives ul#smart-archives-block {
+		padding: 0 0 40px 0;
+		background: url(../images/star-border.png) bottom repeat-x;
+	}
+	#archives ul#smart-archives-block strong, #archives ul#smart-archives-block span, #archives ul#smart-archives-block a {
+		margin: 0 17px 20px 0;
+	}
+	#archives ul#smart-archives-block span.empty-month {
+		color: #e2e0d5;
+	}
+	
+#comments ol.commentlist, #comments ol.commentlist ul {
+	margin: 0; list-style: none;
+}
+	#comments ol.commentlist li {
+		padding: 0 0 20px 0; margin: 0 0 30px 0; clear: both;
+		background: url(../images/star-border.png) center bottom no-repeat;
+	}
+	
+	#comments ol.commentlist ul.children {
+		margin: 0;
+	}
+		#comments ol.commentlist ul.children li {
+			background: none; padding: 0;
+		}
+	
+	#comments .comment {
+		overflow: hidden; 
+	}
+		#comments .comment .avatar {
+			float: left; margin: 0 20px 10px 0;
+			border: 3px solid #e7e5dc;
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+		}
+			/* Webkit can't handle border and border radius on the same element */
+				@media screen and (-webkit-min-device-pixel-ratio:0)
+				{
+				#comments .comment .avatar {
+					border: none;
+				}
+			}
+		#comments .comment p {
+			width: 566px; float: right;
+		}
+			#comments .comment cite {
+				font-family: "Droid Sans", Helvetica, sans-serif; font-size: 18px;
+				margin : 0 0 5px 0; font-style: normal;
+			}
+				#comments .comment span { display: none; }
+		
+		#comments .comment .comment-meta {
+			float: right; font-size: 11px; margin: -30px 0 0 0; 
+		}
+		#comments .comment .reply a {
+			display: block; clear: both; float: right;
+		}
+		#comments .comment .cancel a {
+			display: block;  float: right; clear: both;
+		}
+
+#comments #respond {
+	margin: 0 0 50px 0; clear: both;
+}
+	#comments #respond .fields {
+	 	float: left; width: 280px; overflow: hidden;
+	}
+	#comments #respond .message {
+	 	float: left; width: 394px; overflow: hidden;
+	}
+
+	#comments #respond form label {
+		display: block; 
+	}
+	#comments #respond form input {
+		width: 210px; height: 45px; 
+		border: 1px solid #f3f1e6; padding: 0 15px 0 15px; margin: 0 0 10px 0;
+		background: #fff; 
+		background: linear-gradient(top, #f7f7f7 0%, #ffffff 16%); 
+		background: -moz-linear-gradient(top, #f7f7f7 0%, #ffffff 16%); 
+		background: -webkit-linear-gradient(top, #f7f7f7 0%,#ffffff 16%); 
+		
+		font-family: "Droid Serif", Georgia, serif; font-size: 16px; line-height: 30px; color: #717171;
+	}
+	#comments #respond form textarea {
+		width: 362px; height: 201px; 
+		border: 1px solid #f3f1e6; padding: 10px 15px; margin: 0 0 10px 0;
+		background: #fff; 
+		background: linear-gradient(top, #f7f7f7 0%, #ffffff 3%); 
+		background: -moz-linear-gradient(top, #f7f7f7 0%, #ffffff 3%); 
+		background: -webkit-linear-gradient(top, #f7f7f7 0%,#ffffff 3%); 
+		
+		font-family: "Droid Serif", Georgia, serif; font-size: 16px; line-height: 30px; color: #717171;
+	}
+		#comments #respond form input.commentsubmit {
+			padding: 10px 20px; width: auto; height: auto; color: #65849a; float: right;
+			font-family: "Pacifico", cursive; font-size: 32px; font-weight: normal;
+			background: #f3f1e6 url(../images/btn-bg.png) repeat-x;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			cursor: pointer;
+		}
+			#comments #respond form input:focus, #comments #respond form textarea:focus {
+				border: 1px solid #e2e0d5;
+			}							
+				#comments #respond form input.commentsubmit:focus {
+					border: none;
+				}
+
+#comments .pagination {
+	overflow: hidden; margin: 0 0 24px 0;
+}		
+	#comments .pagination ul {
+		list-style: none;
+	}
+		#comments .pagination li {
+			font-size: 18px;
+		}
+			#comments .pagination li.older {
+				float: left;
+			}
+			#comments .pagination li.newer {
+				float: right;
+			}
+
+
+
+
+	
+#side {
+	width: 244px; float: left;
+	color: #999;
+}
+	
+	section {
+		margin: 0 0 40px 0; overflow: hidden;
+	}
+	
+	ul#categories li {
+		width: 214px; margin: 0 0 10px 0; list-style: none; 
+		font-family: "Droid Sans", Helvetica, sans-serif; font-size: 18px;
+		float: right; text-align: right; clear: both; padding: 5px 15px;
+		background: #f3f1e6 url(../images/btn-bg.png) repeat-x;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+		ul#categories li a {
+			display: block; float: left;
+			
+		}
+	
+
+	#side dt {
+		font-family: "Droid Sans", Helvetica, sans-serif; font-size: 18px;
+	}
+		#side dt.bsg { background: url(../images/favicons.png) 0 6px no-repeat; padding: 0 0 0 24px; }
+		#side dt.l25 { background: url(../images/favicons.png) 0 -134px no-repeat; padding: 0 0 0 24px; }
+		#side dt.youtube { background: url(../images/favicons.png) 0 -275px no-repeat; padding: 0 0 0 24px; }
+		#side dt.jakethelab { background: url(../images/favicons.png) 0 -415px no-repeat; padding: 0 0 0 24px; }
+		
+	#side dd {
+		margin: 0 0 15px 0;
+	}
+	
+#footer-wrap {
+	background: #1a2f3f url(../images/blue-bg.jpg);
+	border-top: 4px solid #e2e0d5;
+}
+
+	footer {
+		width: 968px; margin: 0 auto;
+		padding: 20px 16px 20px 16px; overflow: hidden;
+	}
+		#top {
+			float: right;
+		}
+			#top a {
+				color: #fff; padding: 0 0 0 15px; font-size: 12px;
+				background: url(../images/small-white-star.png) left no-repeat;
+			}
+				#top a:hover {
+					color: #b9ddf6;
+				}
+					
+			
+
+/* Wordpress Alignment Stuff */
+
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CC Attribution-No Derivative Works 2.5 Brazil - http://creativecommons.org/licenses/by-nd/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
